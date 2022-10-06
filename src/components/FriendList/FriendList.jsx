@@ -1,4 +1,5 @@
 import { FriendListItem } from "components/FriendListItem/FriendListItem"
+import PropTypes from 'prop-types';
 import css from "./FriendList.module.css"
 export const FriendList = ({ friends }) => {
     return (
@@ -13,4 +14,8 @@ export const FriendList = ({ friends }) => {
             </ul>
         </div>
     );
+}
+
+FriendList.propTypes = {
+    friends: PropTypes.array
 }
